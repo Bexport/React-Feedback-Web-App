@@ -61,6 +61,8 @@ export const FeedbackProvider = ({children}) => {
         setFeedback(feedback.map((item)=> item.id === id ? {...item, ...updItem}:item))
     }
 
+
+    //manages all the objects and functions that need constant updates
     return <FeedbackContext.Provider value ={{
         feedback,
         deleteFeedback,
