@@ -5,7 +5,7 @@ import Button from './shared/Button'
 import RatingSelect from './RatingSelect'
 import FeedbackContext from '../context/FeedbackContext'
 
-function FeedbackForm({}) {
+function FeedbackForm() {
     const[text,setText] = useState('')    
     const[rating,setRating] = useState(10)    
     const[btnDisalbed,setBtnDisabled] = useState(true)    
