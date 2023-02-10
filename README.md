@@ -4,10 +4,9 @@ This project is a simple web app that allows users to add, delete, and edit feed
 
 ## Scripts for testing
 
-Make sure to run these two installations if not already installed:
+Make sure to run this for dependency installations if not already installed:
 
-### `npm i json-server`
-### `npm i concurrently`
+### `npm install`
 
 In the project directory, you can run:
 
