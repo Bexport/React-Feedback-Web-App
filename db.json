@@ -1,11 +1,6 @@
 {
   "feedback": [
     {
-      "id": 2,
-      "rating": 8,
-      "text": "Feedback item 2 from backend"
-    },
-    {
       "id": 3,
       "rating": 9,
       "text": "Feedback item 3 from backend"
@@ -19,6 +14,11 @@
       "text": "this item has been updated",
       "rating": 8,
       "id": 5
+    },
+    {
+      "text": "I really like your food",
+      "rating": 8,
+      "id": 6
     }
   ]
 }

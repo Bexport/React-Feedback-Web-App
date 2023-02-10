@@ -5,6 +5,7 @@ import Button from './shared/Button'
 import RatingSelect from './RatingSelect'
 import FeedbackContext from '../context/FeedbackContext'
 
+//The Feedback card at the top of the website where the user puts in their rating and comments.
 function FeedbackForm() {
     const[text,setText] = useState('')    
     const[rating,setRating] = useState(10)    

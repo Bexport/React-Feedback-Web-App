@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+//The header title at the top of the website for styling purposes
 function Header({text, bgColor, textColor}) {
     const headerStyles={
         backgroundColor: bgColor,

@@ -1,8 +1,6 @@
 //used to keep track of different states so we don't have to use prop drilling and will have to be implemented to 
 //every single component that uses the thing 
 import { createContext, useState, useEffect } from "react"
-import {v4 as uuidv4} from 'uuid' 
-
 
 const FeedbackContext = createContext()
 
@@ -32,9 +30,7 @@ export const FeedbackProvider = ({children}) => {
         setIsLoading(false)
     }
 
-
-    //uuidv4 generates a new unique idea for every new feedback item added into the feedbacklist 
-    //setFeedback takes all previous feedback into an array after the new feed back added
+    //adds new feedback into json server
     const addFeedback=async(newFeedback)=>{
         const response = await fetch('/feedback',{
             method: 'POST',
@@ -46,7 +42,7 @@ export const FeedbackProvider = ({children}) => {
 
         const data = await response.json()
 
-        setFeedback([data, ...feedback]) 
+        setFeedback([data, ...feedback]) //setFeedback takes all previous feedback into an array after the new feed back added
     }
 
     //this method generates a new array minus current feedback that is the same as the id argument passed in

@@ -1,7 +1,7 @@
 import React from 'react'
 
 function RatingSelect({select,selected}) {
-    //this function is used to update the new button state that was pressed[]
+    //this function is used to update the new button state that was pressed (the numbers 1-10)
     const handleChange = (e)=>{
         select(+e.currentTarget.value)
     } 

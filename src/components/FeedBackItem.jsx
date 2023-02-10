@@ -6,11 +6,11 @@ import {FaTimes, FaEdit}from 'react-icons/fa'
 import { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 
-
+//The Feedback card that has been added to the list of other posted cards
 function FeedBackItem({item}) { 
     const {deleteFeedback, editFeedback} = useContext(FeedbackContext)
 
-    //classname styling is coming from the global styling sheet in index.css so just look for it 
+    //classname styling is coming from the global styling sheet in index.css
   return (
     <Card>
         <div className="num-display">

@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 import Spinner from './shared/Spinner'
 
-
+//List that contains all the posted feedback cards
 function FeedbackList() {
     const {feedback, isLoading} = useContext(FeedbackContext) 
 
@@ -13,6 +13,7 @@ function FeedbackList() {
         return <p>No feedback yet</p>
     }
     
+    //if loading then have the spinner gif, else show the feedback list
     return isLoading ? <Spinner /> : (
     <div classname='feedback-list'>
         <AnimatePresence>

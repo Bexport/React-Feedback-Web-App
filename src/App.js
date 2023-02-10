@@ -10,11 +10,10 @@ import { FeedbackProvider } from './context/FeedbackContext'
 
 
 function App() {   
-    //java script XML (html directly into JS)
-    //the handle delete is being implemented by something called "Prop Drilling"
-    //** UPDATE: WITH THE USE OF CONTEXT, WE DON'T HAVE TO DO PROP DRILLING BECAUSE IT MANGES ALL THE STATES AND FUNCTIONS GLOBALLY IN ONE FILE**/
+    //Everything is wrapped in a Feedback Provider which has everything that can be changed
     //when creating multiple pages, we can use Routes to determine what page we want to go to given the path
     //the default home page is denoted by the '/', based on the implementation I can name it whatever I want
+    //AboutIcon is at the bottom of the page and brings us to About Page when pressed
     return (  //returns JSX elements from our react and can only return one parent
         <FeedbackProvider>
         <Router>
