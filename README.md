@@ -7,7 +7,7 @@ This project is a simple web app that allows users to add, delete, and edit feed
 Make sure to run these two installations if not already installed:
 
 ### `npm i json-server`
-### `num i concurrently`
+### `npm i concurrently`
 
 In the project directory, you can run:
 
