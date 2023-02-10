@@ -1,6 +1,7 @@
 # React Feedback Web App Project
 
 This project is a simple web app that allows users to add, delete, and edit feedback cards which are managed with a mock REST api with a json-server.
+Make sure you have at least Node.js v17.
 
 ## Scripts for testing
 
